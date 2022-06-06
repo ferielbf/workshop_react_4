@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import CustomCard from './CustomCard';
 
 function CustomForm() {
-const [email, setEmail]= useState ('');
+const [email, setEmail]= useState (''); 
 const [firstname, setFirstName]= useState ('');
 const [lastname, setLastName]= useState ('');
 const [password, setPassword]= useState ('');
 const [show, setShow]= useState (false);
 const greeting = () => setShow(!show)
+
+useEffect(()=> {
+alert(123)
+},[])
 
 
   return (
